@@ -20,21 +20,29 @@ main{
     margin-top: 5vh;
 }
 
-.section{
-    width: 75vw;
+.allSection{
+    width: 80vw;
     height: 75vh;
         border: 10px black solid;
         border-radius: 50px;
-        padding: 10px;
-        display: flex;
+        /* display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-around; */
 }
 
-section>button{
+.tab{
+    height: 30px;
+    background-color: red;
+    border-bottom: 10px black solid;
+
+}
+
+
+
+/* section>button{
     margin: 20px;
     width: 40vh;
-}
+} */
 
 marquee{
     position: absolute;

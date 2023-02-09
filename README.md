@@ -16,23 +16,23 @@ A sidebar menu (Can be used together with the "Hamburger button", for example);
 -New buttons increase the amount of the points user gets;
 
 -Button: 
-    *change language(Portuguese(preset)/English/French(disabled));
+    *modal -> select -> change language(Portuguese(preset)/English/French(disabled));
     *change display(Between "game" and tutorial);
     *add points("game");
 
 -Tab:
-    *display languages;
-    *change to mindera or github website;
+    *change "game" / tutorial;
 
 -Carousel:
     *Tutorial pages;
 
 ---------
-Create basics of visual page;
-Add tab mindera/github;
+Create basics of visual page;-->done
+Add tab "game"/tutorial;
 Add lang button;
 Add lang tab;
 Add "game" buttons;
 Add buttons "game"/tutorial;
 Add carousel(tutorial);
+Add tutorial info;
 
