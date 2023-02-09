@@ -27,3 +27,12 @@ A sidebar menu (Can be used together with the "Hamburger button", for example);
 -Carousel:
     *Tutorial pages;
 
+---------
+Create basics of visual page;
+Add tab mindera/github;
+Add lang button;
+Add lang tab;
+Add "game" buttons;
+Add buttons "game"/tutorial;
+Add carousel(tutorial);
+
