@@ -17,11 +17,11 @@ A sidebar menu (Can be used together with the "Hamburger button", for example);
 
 -Button: 
     *modal -> select -> change language(Portuguese(preset)/English/French(disabled));
-    *change display(Between "game" and tutorial);
+    *change display(Between "game", tutorial and points);
     *add points("game");
 
 -Tab:
-    *change "game" / tutorial;
+    *change "game" / tutorial / points;
 
 -Carousel:
     *Tutorial pages;

@@ -1,13 +1,21 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-weight: bolder;
 }
+
+html{
+    background-image: url("images/seamless-vector-background-wallpaper-texture-backdrop-pattern-seamless-vector-background-wallpaper-texture-backdrop-pattern-set-111045565.jpg");
+    /* background-size: cover; */
+    font-family: Marker;
+
+}
+
 h1{
+    font-size: 5vw;
     display: flex;
     justify-content: center;
-
 }
-
 
 header button{
       float: right;
@@ -20,35 +28,49 @@ main{
     margin-top: 5vh;
 }
 
+marquee span{
+    background-image: url(Images/pride-rainbow.gif);
+    border-color: 1px black solid;
+    border-radius: 5px;
+}
 .allSection{
     width: 80vw;
     height: 75vh;
-        border: 10px black solid;
-        border-radius: 50px;
-        /* display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around; */
+    border: 10px black solid;
+    border-radius: 50px;
+}
+
+.tab button{
+    width:50%;
+    border: 0px;
+}
+
+#tablinkGame{
+    border-top-left-radius: 50px;
+    background-color: blue;
+    color: white;
+    font-size: larger;
+}
+
+#tablinkPoints{
+    border-top-right-radius: 50px;
 }
 
 .tab{
-    height: 30px;
-    background-color: red;
+    height: 5%;
     border-bottom: 10px black solid;
-
+    display: flex;
+    font-size: small;
 }
-
-
-
-/* section>button{
-    margin: 20px;
-    width: 40vh;
-} */
+.tab button{
+    background-color: yellow;
+}
 
 marquee{
     position: absolute;
 }
 
-.modal{
+.modalLang{
    display: none;
    position: fixed;
    margin-left: 75vw;
@@ -56,6 +78,7 @@ marquee{
    height: 20%;
    background-color: rgb(0,0,0); 
    background-color: rgba(0,0,0,0.4);
+  
 }
 
 .modal-content{
@@ -63,7 +86,7 @@ marquee{
     color: aliceblue;
   }
 
-  .close {
+.closeLang {
     color: rgb(255, 221, 0);
     font-size: 28px;
     font-weight: bold;
@@ -73,6 +96,43 @@ button{
     cursor: pointer;
 }
 
-.close:hover{
+.closeLang:hover{
   cursor: pointer;
 }
+
+.tutorialSection{
+    background-color: aqua;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#infSectionGame button{
+    width: 20%;
+    height: 20%;
+margin: 4%;
+margin-bottom: 2%;
+border-color: blueviolet;
+}
+
+#infSectionGame{
+    height: 95%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    display:"";
+
+}
+
+#infSectionTutorial{
+    height: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+

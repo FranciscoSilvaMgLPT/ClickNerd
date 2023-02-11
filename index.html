@@ -10,13 +10,13 @@
 <body>
 <header>
     <h1>Clicknerd</h1>
-    <marquee behavior="scroll" direction="left" position: absolute>Pontos: <span id="points">0</span></marquee>
-<button id="langButton"><span lang="en">Language</span><span lang="pt">Línguagem</span>
+    <marquee behavior="scroll" direction="left" position: absolute><span>Pontos: <span id="points">0</span> </span></marquee>
+<button id="langButton">Línguagem
     </button>
 
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modalLang">
     <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="closeLang">&times;</span>
         <p>Portuguese</p>
         <p>English</p>
         <p>French</p>
@@ -34,16 +34,18 @@
     
 <section class="allSection">
     <section class="tab">
-    <button class="tablink">Game</button>
-    <button class="tablink">Tutorial</button>
+    <button class="tablink" id="tablinkGame">Game</button>
+    <button class="tablink" id="tablinkTutorial" >Tutorial</button>
+    <button class="tablink" id="tablinkPoints">Points</button>
 </section>
 
+<section id="infSectionGame">
 
     <button id="buttonA">+1</button>
 
     <button id="buttonB" disabled>+2</button>
 
-    <button id="buttonC" disabled>+4</button>
+    <button d="buttonC" disabled>+4</button>
 
     <button id="buttonD" disabled>+8</button>
 
@@ -53,8 +55,21 @@
 
     <button id="buttonG" disabled>+64</button>
 
-    </section>
+</section>
 
+
+<section id="infSectionTutorial">
+
+    <section class="arrowSection">
+<button class="leftButton">left</button>
+</section>
+
+<section class="tutorialSection">YEYEYE</section>
+
+<section class="arrowSection">
+<button class="rightButton">right</button>
+</section>
+</section>
 
     </main>
  
