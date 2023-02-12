@@ -1,6 +1,7 @@
 const buttonA = document.getElementById("buttonA");
 const buttonB = document.getElementById("buttonB");
 const buttonC = document.getElementById("buttonC");
+const buttonD = document.getElementById("buttonD");
 const points = document.getElementById("points");
 const modal = document.getElementById("myModal");
 const langButton = document.getElementById("langButton");
@@ -18,19 +19,37 @@ let count = 0;
 buttonA.addEventListener("click", () => {
 count++;
 points.innerHTML = count;;
-if(count>=30){
+if(count>=15){
     buttonB.disabled = false;
+    buttonA.style.backgroundImage = "url(Images/egg.gif)";
+    buttonA.style.backgroundSize = "contain";
+    buttonA.style.animation = "marquee 30s infinite linear";
 }
 });
 
 buttonB.addEventListener("click", () => {
     count++;count++;
     points.innerHTML = count;
-    if(count>=90){
+    if(count>=60){
         buttonC.disabled = false;
+        buttonB.style.backgroundImage = "url(Images/potatoeBird.gif)";
+        buttonB.style.backgroundSize = "contain";
+        buttonB.style.animation = "marquee 30s infinite linear";
     }
    
     });
+
+    buttonC.addEventListener("click", () => {
+        count++;count++;count++;
+        points.innerHTML = count;
+        if(count>=120){
+            buttonD.disabled = false;
+            buttonC.style.backgroundImage = "url(Images/Business_Pigeon.gif)";
+            buttonC.style.backgroundSize = "contain";
+            buttonC.style.animation = "marquee 30s infinite linear";
+        }
+       
+        });
 
 langButton.onclick = function() {
         modal.style.display = "block";
@@ -67,8 +86,7 @@ tabTutorial.onclick = function(){
     tabGame.style.color = "black";
     tabPoints.style.color = "black";
     tutorial.style.display = "";
-    games.style.display = "none";
-    
+    games.style.display = "none";    
 }
 
 tabPoints.onclick = function(){
