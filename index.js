@@ -86,7 +86,7 @@ tabTutorial.onclick = function(){
     tabGame.style.color = "black";
     tabPoints.style.color = "black";
     tutorial.style.display = "";
-    games.style.display = "none";    
+    games.style.display = "none"; 
 }
 
 tabPoints.onclick = function(){
@@ -101,4 +101,3 @@ tabPoints.onclick = function(){
     tabGame.style.color = "black";
     tabTutorial.style.color = "black";
 }
-

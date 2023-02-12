@@ -25,6 +25,25 @@ h1{
     font-size: 5vw;
     display: flex;
     justify-content: center;
+    color:tomato;
+    animation: 4s infinite colorchange;
+}
+@keyframes colorchange{
+    0% {
+        color: red;
+      }
+      25% {
+        color: green;
+      }
+      50% {
+        color: black;
+      }
+      75% {
+        color: blue;
+      }
+      100% {
+        color: red;
+      }
 }
 
 header button{
@@ -121,11 +140,12 @@ button{
 }
 
 #infSectionGame button{
-    width: 20%;
-    height: 20%;
-margin: 4%;
-margin-bottom: 2%;
+    width: 20vw;
+    height: 20vh;
+    border-width: 10px;
+border-radius: 50px;
 border-color: blueviolet;
+font-size: 20px;
 }
 
 #infSectionGame{
@@ -143,8 +163,11 @@ border-color: blueviolet;
     justify-content: center;
     text-align: center;
     align-items: center;
+
 }
 
 #infSectionTutorial img{
     height: 50vh;
+
 }
+
