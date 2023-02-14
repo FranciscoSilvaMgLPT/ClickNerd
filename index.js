@@ -2,6 +2,9 @@ const buttonA = document.getElementById("buttonA");
 const buttonB = document.getElementById("buttonB");
 const buttonC = document.getElementById("buttonC");
 const buttonD = document.getElementById("buttonD");
+const buttonE = document.getElementById("buttonE");
+const buttonF = document.getElementById("buttonF");
+const buttonG = document.getElementById("buttonG");
 const points = document.getElementById("points");
 const modal = document.getElementById("myModal");
 const langButton = document.getElementById("langButton");
@@ -30,8 +33,12 @@ const englandImg = document.getElementById("englandImg");
 const portugalTrad = ["Pontos: ", "Jogo", "Tutorial", "Pontos", 
 "Tu és uma coisa sem forma! <br> Clica nos buttons para evoluir e juntar pontos!<br>Mais pontos desbloqueiam novos botoes, novos butoes desbloqueiam mais pontos!",
 "Botao (+1 ponto) <br> Evolui/desbloqeia o proximo botao aos 15 pontos",
-"Botao (+2 ponto) <br> Evolui/desbloqeia o proximo botao aos 40 pontos",
-"Botao (+1 ponto) <br> Evolui/desbloqeia o proximo botao aos 15 pontos"];
+"Botao (+2 pontos) <br> Evolui/desbloqeia o proximo botao aos 40 pontos",
+"Botao (+4 pontos) <br> Evolui/desbloqeia o proximo botao aos 80 pontos",
+"Botao (+8 pontos) <br> Evolui/desbloqeia o proximo botao aos 160 pontos",
+"Botao (+16 pontos) <br> Evolui/desbloqeia o proximo botao aos 320 pontos",
+"Botao (+32 pontos) <br> Evolui/desbloqeia o proximo botao aos 500 pontos",
+"Botao (+64 pontos) <br> Evolui aos 900 pontos! ULTIMA ETAPA! ULTIMA EVOLUÇAO!"];
 const engPreset = document.getElementsByClassName("Eng");
 let engTrad = [];
 let carouselCount = 0;
@@ -65,17 +72,44 @@ buttonA.addEventListener("click", () => {
 });
 
 buttonB.addEventListener("click", () => {
-  count++;
-  count++;
+  count=count+2;
   points.innerHTML = count;
   pointsSec.innerHTML = count;
   updateButtons();
 });
 
 buttonC.addEventListener("click", () => {
-  count++;
-  count++;
-  count++;
+  count=count+4;
+  points.innerHTML = count;
+  pointsSec.innerHTML = count;
+  updateButtons();
+});
+
+buttonD.addEventListener("click", () => {
+  count=count+8;
+  points.innerHTML = count;
+  pointsSec.innerHTML = count;
+  updateButtons();
+});
+
+buttonE.addEventListener("click", () => {
+  count=count+16;
+  points.innerHTML = count;
+  pointsSec.innerHTML = count;
+  updateButtons();
+});
+
+
+buttonF.addEventListener("click", () => {
+  count=count+32;
+  points.innerHTML = count;
+  pointsSec.innerHTML = count;
+  updateButtons();
+});
+
+
+buttonG.addEventListener("click", () => {
+  count=count+64
   points.innerHTML = count;
   pointsSec.innerHTML = count;
   updateButtons();
@@ -87,18 +121,44 @@ function updateButtons() {
     buttonA.style.backgroundImage = "url(Images/egg.gif)";
     buttonA.style.backgroundSize = "contain";
     buttonA.style.animation = "marquee 30s infinite linear";
+    imgTutBut0.src="Images/egg.gif";
   }
   if (count >= 40) {
     buttonC.disabled = false;
     buttonB.style.backgroundImage = "url(Images/potatoeBird.gif)";
     buttonB.style.backgroundSize = "contain";
     buttonB.style.animation = "marquee 30s infinite linear";
+    imgTutBut1.src="Images/potatoeBird.gif"
   }
-  if (count >= 90) {
+  if (count >= 80) {
     buttonD.disabled = false;
     buttonC.style.backgroundImage = "url(Images/Business_Pigeon.gif)";
     buttonC.style.backgroundSize = "contain";
     buttonC.style.animation = "marquee 30s infinite linear";
+    imgTutBut2.src="Images/Business_Pigeon.gif"
+  }
+  if (count >= 160) {
+    buttonE.disabled = false;
+    buttonD.style.backgroundImage = "url(Images/baby.gif)";
+    buttonD.style.backgroundSize = "contain";
+    buttonD.style.animation = "marquee 30s infinite linear";
+  }
+  if (count >= 320) {
+    buttonF.disabled = false;
+    buttonE.style.backgroundImage = "url(Images/human.gif)";
+    buttonE.style.backgroundSize = "contain";
+    buttonE.style.animation = "marquee 30s infinite linear";
+  }
+  if (count >= 500) {
+    buttonG.disabled = false;
+    buttonF.style.backgroundImage = "url(Images/working.gif)";
+    buttonF.style.backgroundSize = "contain";
+    buttonF.style.animation = "marquee 30s infinite linear";
+  }
+  if (count >= 900) {
+    buttonG.style.backgroundImage = "url(Images/mindera_walk.gif)";
+    buttonG.style.backgroundSize = "contain";
+    buttonG.style.animation = "marquee 30s infinite linear";
   }
 }
 
