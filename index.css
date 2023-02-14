@@ -6,9 +6,6 @@
 
 html{
     background-image: url("images/seamless-vector-background-wallpaper-texture-backdrop-pattern-seamless-vector-background-wallpaper-texture-backdrop-pattern-set-111045565.jpg");
-    /* background-size: cover; */
-    font-family: Marker;
-
 }
 
 @keyframes marquee {
@@ -80,7 +77,9 @@ marquee span{
     color: white;
     font-size: larger;
 }
-
+h2{
+    background-color: greenyellow;
+}
 #tablinkPoints{
     border-top-right-radius: 50px;
 }
@@ -97,6 +96,16 @@ marquee span{
 
 marquee{
     position: absolute;
+}
+
+
+#langButton img{
+    height: 50px;
+    width: 80px;
+}
+
+#portugalImg{
+ display:none;
 }
 
 .modalLang{
@@ -129,6 +138,10 @@ button{
   cursor: pointer;
 }
 
+p:hover{
+    cursor: pointer;
+  }
+
 .tutorialSection{
     background-color: aqua;
     width: 40%;
@@ -159,15 +172,34 @@ font-size: 20px;
 #infSectionTutorial{
     height: 95%;
     display: flex;
-    justify-content: space-between;
     justify-content: center;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
-
 }
 
 #infSectionTutorial img{
     height: 50vh;
-
 }
 
+#infSectionTutorial button img{
+height: 60px;
+display: flex;
+justify-content: center;
+}
+
+#infSectionTutorial button{
+    border-radius: 50%;
+    background-color: blue;
+}
+
+#infSectionPoints{
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#infSectionPoints span{
+font-size: 50vh;
+}

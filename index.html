@@ -10,16 +10,17 @@
 <body>
 <header>
     <h1>Clicknerd</h1>
-    <marquee behavior="scroll" direction="left" position: absolute><span>Pontos: <span id="points">0</span> </span></marquee>
-<button id="langButton">Línguagem
+    <marquee behavior="scroll" direction="left" position: absolute><span class="Eng">Points: </span><span id="points">0</span> </marquee>
+<button id="langButton"><img id="englandImg" src="svg/englandFlag.svg" alt="englandFlag">
+  <img id="portugalImg" src="svg/Portugal_flag_300.svg" alt="portugalFlag">
     </button>
 
     <div id="myModal" class="modalLang">
     <div class="modal-content">
         <span class="closeLang">&times;</span>
-        <p>Portuguese</p>
-        <p>English</p>
-        <p>French</p>
+        <p id="england">English</p>
+        <p id="portugal">Portuguese</p>
+        <p id="french"><s>French</s></p>
       </div>
 
 </div>
@@ -34,9 +35,9 @@
     
 <section class="allSection">
     <section class="tab">
-    <button class="tablink" id="tablinkGame">Game</button>
-    <button class="tablink" id="tablinkTutorial" >Tutorial</button>
-    <button class="tablink" id="tablinkPoints">Points</button>
+    <button class="tablink" id="tablinkGame" ><span class="Eng">Game</span></button>
+    <button class="tablink" id="tablinkTutorial" ><span class="Eng">Tutorial</span></button>
+    <button class="tablink" id="tablinkPoints" ><span class="Eng">Points</span></button>
 </section>
 
 <section id="infSectionGame">
@@ -59,29 +60,39 @@
 
 
 <section id="infSectionTutorial">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+  <button id="left"><img src="svg/arrow-left-circle (1).svg" alt=""></button>
+  <div id="carousel0">
+              <h2 class="Eng">You are a formless thing! <br>
+                Click on buttons to evolve and gather points! <br>
+             More points unlock new buttons, <br>
+            new buttons gather more points! 
+          </h2>
+        </div>
 
-        <div class="carousel-inner">
-            <div class="item active">
-              <img src="Images/egg.gif" alt="Egg">
-            </div>
-        
-            <div class="item">
-              <img src="Images/potatoeBird.gi" alt="Pigeon">
-            </div>
-        
-            <div class="item">
-              <img src="ny.jpg" alt="New York">
-            </div>
-          </div>
+        <div id="carousel1" style="display: none;">
+          <img id="imgTutBut0" src="Images/egg.gif" alt="Egg">
+        <h2><span class="Eng">Button (+1 point) <br>
+        Evolve/unlock next button at 15 points</h2> </span> 
+      </div>
+      
+        <div id="carousel2" style="display: none;">
+          <img id="imgTutBut1" src="Images/potatoeBird.gif" alt="Potatoe Bird">
+          <h2><span class="Eng">Button (+2 points) <br>
+            Evolve/unlock next button at 40 points</h2>  </span>
+        </div>
+
+        <div id="carousel3" style="display: none;">
+          <img id="imgTutBut2" src="Images/Business_Pigeon.gif" alt="Business Pigeon">
+          <h2><span class="Eng">Button (+4 points) <br>
+            Evolve/unlock next button at 90 points</h2>  </span>
+        </div>
+   
+  <button id="right"><img src="svg/arrow-right-circle (1).svg" alt=""></button>
 </section>
 
+<section id="infSectionPoints">
+<span id="pointsSection">0</span>
+</section>
     </main>
  
 </body>
